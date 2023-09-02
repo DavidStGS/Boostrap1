@@ -1,9 +1,0 @@
-/* cambiar tipo de letra */
-nav.navbar ul.nav li {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* cambiar el color de fondo a la barra */
-nav.navbar {
-    background-color: #CC1414;
-}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap
+    </title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+            $('.carousel').carousel({
+                interval: 200
+            });
+
+        })
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg p-3 fixed-top" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black fs-3 fw-bold" href="#">Viajes Turismo Estelar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./precios.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button type="button" class="btn btn-black">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container py-5">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Productos</li>
+            </ol>
+        </nav>
+        <!-- tabla de precios -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" aria-current="page" href="#table">Tabla</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tarjetas">Tarjetas</a>
+            </li>
+            <li>
+                <a class="nav-link" data-bs-toggle="tab" href="#comentarios">Cometarios</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="table" rol="tabpanel" aria-labelledby="table-tab">
+                <div class="table-responsive mt-3">
+                    <table class="table table-light" style="background-color: #e3f2fd;">
+                        <thead class="table-dark">
+                            <th>Calidad</th>
+                            <th>Bogota</th>
+                            <th>Medellin</th>
+                            <th>Barranquilla</th>
+                            <th>Cartagena</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>55.000$</td>
+                                <td>49.000$</td>
+                                <td>56.000$</td>
+                                <td>45.000$</t>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>70.000$</td>
+                                <td>67.000$</td>
+                                <td>71.600$</td>
+                                <td>78.700$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>95.00$</td>
+                                <td>86.700$</td>
+                                <td>92.900$</td>
+                                <td>88.000$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>105.000$</td>
+                                <td>115.000$</t>
+                                <td>125.500$</td>
+                                <td>116.700$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade mt-2" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="accordion" id="accordion-tarjetas">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-target="#tarjeta-basica"
+                                data-bs-toggle="collapse" aria-controls="tarjeta-basica" aria-expanded="true">
+                                Tarjeta Basica
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="tarjeta-basica"
+                            data-bs-parent="#accordion-tarjetas">
+                            <div class="accordion-body">
+                                Descubre la comodidad y conveniencia con nuestra Tarjeta Básica: pagos seguros, acceso a
+                                cajeros, compras en línea y atención al cliente. ¡Solicita la tuya hoy mismo y
+                                simplifica tu día a día!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tarjeta-vip" aria-expanded="true" aria-controls="tarjeta-vip">
+                                Tarjeta Vip
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="tarjeta-vip" data-bs-parent="#accordion-tarjetas">
+                            <div class="accordion-body">
+                                Eleva tu estilo de vida con nuestra Tarjeta VIP: acceso a eventos exclusivos,
+                                experiencias gourmet, compras de lujo, viajes VIP y atención personalizada. ¡Descubre el
+                                lujo en cada detalle!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tarjeta-black" aria-expanded="true" aria-controls="tarjeta-black">
+                                Tarjeta Black
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="tarjeta-black"
+                            data-bs-parent="#accordion-tarjetas">
+                            <div class="accordion-body">
+                                Experimenta el poder y el lujo sin límites con nuestra Tarjeta Black. Acceso exclusivo a
+                                eventos VIP, beneficios de viaje extraordinarios y servicios de élite. ¡Tu estilo de
+                                vida excepcional comienza aquí!
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <p class="mt-3">Comentarios</p>
+            </div>
+        </div>
+        </li>
+        </ul>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid" style="background-color: #e3f2fd;">
+            <div class="row p-5 text-black">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3">Viajes DavidSGS</p>
+                    <p>@2023</p>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Redes Sociales</p>
+                    <div class="mb-3">
+                        <a class="text-dark" href="https://www.facebook.com">Facebook</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="text-dark" href="https://www.youtube.com">Youtube</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="text-dark" href="https://twitter.com">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Nuestras Oficinas</p>
+                    <p><i class="bi bi-phone iconos"></i>+57 XXXXXXXXXXXX</p>
+                    <p><i class="bi bi-house iconos"></i>CRRA 23, cll 115, barrio Los maracos</p>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Leer más</p>
+                    <div class="mb-3">
+                        <a class="text-dark" href="#">Terminos y Condiciones</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="text-dark" href="#">Contactenos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
