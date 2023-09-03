@@ -8,21 +8,13 @@ body {
     opacity: 1;
     background-position: center;
     background-size: cover;
-    padding: 70px 70px;
+    padding: 120px 120px;
     color: white;
     font-size: 5rem;
     text-align: center;
 }
 
-.carousel {
-    width: 70%;
-
-}
 
 .iconos {
     padding-right: 5px;
-}
-
-footer {
-    background-color: #0d6efd;
 }
